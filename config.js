@@ -1,6 +1,6 @@
 const mongoose= require('mongoose')
 
-const connect= mongoose.connect("mongodb://localhost:27017/LoginWithAI")
+const connect= mongoose.connect("mongodb://127.0.0.1:27017/LoginWithAI")
 
 //check Mongo connection
 
