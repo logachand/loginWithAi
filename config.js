@@ -1,6 +1,7 @@
 const mongoose= require('mongoose')
 
-const connect= mongoose.connect("mongodb://127.0.0.1:27017/LoginWithAI")
+const connect= mongoose.connect("mongodb+srv://logachan08:2w36p9bbH2QHqV6F@login.naogcdl.mongodb.net/?retryWrites=true&w=majority")
+
 
 //check Mongo connection
 
