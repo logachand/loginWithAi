@@ -18,6 +18,12 @@ app.use(express.static("public"))
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 
+
+app.get('/test',(req,res)=>{
+    res.send("test Works Well")
+})
+
+
 app.get('/',(req,res)=>{
     res.render('login')
 })
