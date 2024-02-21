@@ -49,7 +49,7 @@ app.post("/signup",async(req,res)=>{
     // check user already exists
     const alreadyUser=await Collection.findOne({name:data.name})
     if(alreadyUser){
-        res.send("user is already registered")
+        res.send(`<script>alert("User is Already Registered")</script>`)
     }else{
     const without_hashed= data.password
     console.log("This is Without hashed Password : " , without_hashed);
@@ -57,8 +57,10 @@ app.post("/signup",async(req,res)=>{
     data.password=hashPassword // replace the password with hased password
     const userdata=await Collection.insertMany(data)
     console.log(userdata);
-    res.redirect('login')
+    res.redirect('/')
     }
+
+    
 })
 
 
